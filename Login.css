@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;700&display=swap");
+
+:root {
+  --azul: #2E62A6;
+  --verde: #03A678;
+  --laranja: #F25C05;
+  --branco: #FFFFFF;
+  --cinza: #F0F0F0;
+  --cinza-card: #E2E2E2;
+  --preto: #000000;
+}
+
+html {
+  font-size: min(1.1111vw, 1.6667vh);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 400;
+  color: var(--preto);
+  background-color: var(--branco);
+  background-image: url("img/Pegadas.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+}
+
+a {
+  text-decoration: none;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6.875rem;
+  padding: 0 7.9375rem 0 7.6875rem;
+  background-color: var(--cinza);
+  border-top: 0.3125rem solid var(--verde);
+  border-bottom: 0.3125rem solid var(--verde);
+}
+
+.cabecalho img {
+  display: block;
+}
+
+.busca {
+  width: 23.75rem;
+  height: 3.125rem;
+  padding-left: 6.125rem;
+  border: 0.125rem solid var(--verde);
+  border-radius: 1.5625rem;
+  background-color: transparent;
+  background-image: url("img/icone-busca.svg");
+  background-repeat: no-repeat;
+  background-position: 0.75rem center;
+  background-size: 2.25rem;
+  font-family: "Baloo 2", sans-serif;
+  font-size: 1.5rem;
+  color: var(--verde);
+}
+
+.busca::placeholder {
+  color: var(--verde);
+  opacity: 1;
+}
+
+.principal {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding-right: 2.5rem;
+}
+
+.lado-esquerdo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-escrita {
+  width: 24rem;
+  height: 8rem;
+}
+
+.logo-mascote {
+  width: 23rem;
+  height: 23rem;
+  margin-top: 0.75rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 40.5rem;
+  height: 85vh;
+  border-radius: 1.875rem;
+  background-color: rgba(226, 226, 226, 0.92);
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  text-align: center;
+}
+
+.formulario {
+  width: 35rem;
+}
+
+.linha {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.linha-senha {
+  margin-top: 3.25rem;
+}
+
+.linha img {
+  width: 2.8125rem;
+}
+
+.linha input {
+  flex: 1;
+  height: 4.4375rem;
+  padding-left: 1.25rem;
+  border: 0.0625rem solid var(--preto);
+  border-radius: 1.4rem;
+  background-color: var(--branco);
+  font-family: "Baloo 2", sans-serif;
+  font-size: 1.25rem;
+}
+
+.linha input::placeholder {
+  color: var(--preto);
+  opacity: 1;
+}
+
+.opcoes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.2rem;
+  padding-left: 1.5625rem;
+}
+
+.lembrar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+}
+
+.lembrar input {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 1.875rem;
+  height: 1.875rem;
+  margin: 0;
+  border: 0.0625rem solid var(--preto);
+  border-radius: 0.375rem;
+  background-color: var(--branco);
+  cursor: pointer;
+}
+
+.lembrar input:checked {
+  background-image: url("img/icone-check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 75%;
+}
+
+.opcoes a {
+  font-size: 1.5rem;
+  color: #3FAE6E;
+}
+
+button {
+  display: block;
+  width: 27.5rem;
+  height: 3.75rem;
+  margin: 5.5rem auto 0 auto;
+  border: none;
+  border-radius: 0.75rem;
+  background: linear-gradient(90deg, #47A96A, #5FD396);
+  font-family: "Baloo 2", sans-serif;
+  font-size: 1.75rem;
+  color: var(--branco);
+  cursor: pointer;
+}
