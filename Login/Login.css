@@ -28,7 +28,7 @@ body {
   font-weight: 400;
   color: var(--preto);
   background-color: var(--branco);
-  background-image: url("img/Pegadas.svg");
+  background-image: url("../img/Pegadas.svg");
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: contain;
@@ -60,7 +60,7 @@ a {
   border: 0.125rem solid var(--verde);
   border-radius: 1.5625rem;
   background-color: transparent;
-  background-image: url("img/icone-busca.svg");
+  background-image: url("../img/icone-busca.svg");
   background-repeat: no-repeat;
   background-position: 0.75rem center;
   background-size: 2.25rem;
@@ -183,7 +183,7 @@ h1 {
 }
 
 .lembrar input:checked {
-  background-image: url("img/icone-check.svg");
+  background-image: url("../img/icone-check.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 75%;
